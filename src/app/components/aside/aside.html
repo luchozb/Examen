@@ -1,1 +1,75 @@
-<p> hl vv</p>
+<aside class="col-lg-4 col-md-12">
+    <div class="sticky-aside d-flex flex-column gap-4">
+
+        <!-- Promociones Vigentes -->
+        <div class="card border-warning shadow-sm">
+            <div class="card-header bg-warning text-dark fw-bold d-flex align-items-center">
+                <i class="bi bi-gift-fill me-2 fs-5"></i> Promociones Vigentes
+            </div>
+            <div class="card-body">
+                <div class="mb-3 border-bottom pb-2">
+                    <span class="badge bg-danger mb-1">¡Tiempo Limitado!</span>
+                    <h6 class="fw-bold mb-1">Matrícula 2x1</h6>
+                    <p class="small text-muted mb-0">Inscríbete junto a un amigo en cualquier programa inicial y paguen solo una matrícula.</p>
+                </div>
+                <div>
+                    <span class="badge bg-success mb-1">Descuento Especial</span>
+                    <h6 class="fw-bold mb-1">20% para Universitarios</h6>
+                    <p class="small text-muted mb-0">Presenta tu carnet universitario vigente y obtén un descuento automático en tus cuotas mensuales.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Horarios Disponibles -->
+        <div class="card border-primary shadow-sm">
+            <div class="card-header bg-primary text-white fw-bold d-flex align-items-center">
+                <i class="bi bi-clock-fill me-2"></i> Horarios Disponibles
+            </div>
+            <ul class="list-group list-group-flush small">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span><strong>Turno Mañana:</strong></span>
+                    <span class="text-primary">08:00 AM - 11:00 AM</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span><strong>Turno Tarde:</strong></span>
+                    <span class="text-primary">03:00 PM - 06:00 PM</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span><strong>Turno Noche:</strong></span>
+                    <span class="text-primary">07:00 PM - 10:00 PM</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span><strong>Sabatino:</strong></span>
+                    <span class="text-primary">08:00 AM - 01:00 PM</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Formulario de Contacto Rápido -->
+        <div id="contacto" class="card bg-dark text-white p-3 shadow-sm">
+            <h5 class="fw-bold text-center mb-3"><i class="bi bi-envelope-check me-2"></i>¿Deseas más información?</h5>
+            <form onsubmit="event.preventDefault(); alert('¡Gracias por comunicarte! Un asesor se contactará contigo.');">
+                <div class="mb-2">
+                    <label class="form-label small">Nombre Completo</label>
+                    <input type="text" class="form-control form-control-sm" placeholder="Ej. Juan Pérez" required>
+                </div>
+                <div class="mb-2">
+                    <label class="form-label small">Correo Electrónico</label>
+                    <input type="email" class="form-control form-control-sm" placeholder="correo@ejemplo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label small">Idioma de Interés</label>
+                    <select class="form-select form-select-sm" required>
+                        <option value="" selected disabled>Selecciona un idioma</option>
+                        <option>Inglés</option>
+                        <option>Francés</option>
+                        <option>Alemán</option>
+                        <option>Portugués</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm w-100 fw-bold">Enviar Solicitud</button>
+            </form>
+        </div>
+
+    </div>
+</aside>
